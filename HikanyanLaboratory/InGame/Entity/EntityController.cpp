@@ -1,5 +1,17 @@
 ﻿#include "EntityController.h"
 
+#include "Player/Player.h"
+
+void EntityController::Initialize()
+{
+	// Playerの初期化
+	Player* player = new Player();
+	player->Initialize();
+	AddEntity(player);
+	//敵の初期化
+
+}
+
 void EntityController::AddEntity(EntityBase* entity)
 {
 	entities.push_back(entity);

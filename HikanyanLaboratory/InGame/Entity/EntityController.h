@@ -8,6 +8,7 @@ private:
 	std::vector<EntityBase*> entities;
 
 public:
+	void Initialize();
 	void AddEntity(EntityBase* entity);
 	void UpdateEntities();
 	void DrawEntities();

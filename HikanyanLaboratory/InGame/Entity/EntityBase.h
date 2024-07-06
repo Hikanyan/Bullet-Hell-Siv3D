@@ -3,7 +3,9 @@
 class EntityBase
 {
 public:
-	Vector2D<int> position;
+	Vector2D<float> position;
+	Vector2D<float> rotation;
+	Vector2D<float> scale;
 	int hp;
 
 	virtual void Initialize() = 0;

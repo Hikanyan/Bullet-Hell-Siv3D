@@ -13,13 +13,9 @@ public:
 
 	void GameClearCheck();
 
-	void Enter() override
-	{
-	}
+	void Enter() override;
 
 	void Update() override;
 
-	void Exit() override
-	{
-	}
+	void Exit() override;
 };

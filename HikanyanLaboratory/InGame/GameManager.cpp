@@ -1,5 +1,7 @@
 ﻿#include "GameManager.h"
 
+#include "Entity/EntityController.h"
+
 
 // ゲームの状態を表す
 enum class GameState
