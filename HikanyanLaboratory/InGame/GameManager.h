@@ -1,6 +1,6 @@
 ﻿#pragma once
-#include "Singleton.h"
-#include "StateMachine.h"
+#include "../System/Singleton.h"
+#include "../System/StateMachine.h"
 
 class GameManager : public Singleton<GameManager>
 {

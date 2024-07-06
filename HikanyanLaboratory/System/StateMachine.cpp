@@ -1,7 +1,7 @@
 //#include "stdafx.h"
 #include "StateMachine.h"
 
-#include "TitleState.h"
+#include "../InGame/TitleState.h"
 
 
 StateMachine::StateMachine() : currentState(new TitleState(this))

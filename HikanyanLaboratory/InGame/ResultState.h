@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "State.h"
+#include "../System/StateMachine.h"
 
 class ResultState : public State
 {
@@ -9,8 +9,7 @@ public:
 	bool isGameClear;
 	Font font = Font(40);
 
-	ResultState(StateMachine* machine, int score, int lives, bool clear) :
-		State(machine), finalScore(score), remainingLives(lives), isGameClear(clear)
+	ResultState(StateMachine* machine) : State(machine)
 	{
 	}
 

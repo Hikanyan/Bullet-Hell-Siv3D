@@ -1,5 +1,24 @@
 ﻿#include "GameManager.h"
-#include "StateMachine.h"
+
+
+// ゲームの状態を表す
+enum class GameState
+{
+	// ゲームの初期化
+	Init,
+	// ゲームのメインループ
+	Main,
+	// ゲームの終了
+	End
+};
+
+enum class GameScene
+{
+	Title,
+	InGame,
+	Result
+};
+
 
 void GameManager::Initialize()
 {

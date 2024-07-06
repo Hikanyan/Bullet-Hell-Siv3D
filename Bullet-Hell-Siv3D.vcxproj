@@ -115,13 +115,325 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HikanyanLaboratory\InGame\Entity\Enemy\EnemyBase.cpp" />
+    <ClCompile Include="HikanyanLaboratory\InGame\Entity\EntityBase.cpp" />
+    <ClCompile Include="HikanyanLaboratory\InGame\Entity\EntityController.cpp" />
+    <ClCompile Include="HikanyanLaboratory\InGame\Entity\HealthController.cpp" />
     <ClCompile Include="HikanyanLaboratory\InGame\GameManager.cpp" />
-    <ClCompile Include="HikanyanLaboratory\InGame\GameState.cpp" />
+    <ClCompile Include="HikanyanLaboratory\InGame\GameState.cpp">
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>stdafx.h;</ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleDependenciesFile>
+      <ModuleOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-Hell-Siv3D(debug).pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-H.a6667edf.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <XMLDocumentationFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX20_CISO646_REMOVED_WARNING;_SILENCE_ALL_CXX23_DEPRECATION_WARNINGS;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26451;26812;</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:__cplusplus </AdditionalOptions>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
     <ClCompile Include="HikanyanLaboratory\InGame\ResultState.cpp" />
-    <ClCompile Include="HikanyanLaboratory\InGame\Singleton.cpp" />
-    <ClCompile Include="HikanyanLaboratory\InGame\State.cpp" />
-    <ClCompile Include="HikanyanLaboratory\InGame\StateMachine.cpp" />
     <ClCompile Include="HikanyanLaboratory\InGame\TitleState.cpp" />
+    <ClCompile Include="HikanyanLaboratory\System\Singleton.cpp">
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>stdafx.h;</ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleDependenciesFile>
+      <ModuleOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-Hell-Siv3D(debug).pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-H.a6667edf.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <XMLDocumentationFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX20_CISO646_REMOVED_WARNING;_SILENCE_ALL_CXX23_DEPRECATION_WARNINGS;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26451;26812;</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:__cplusplus </AdditionalOptions>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="HikanyanLaboratory\System\State.cpp">
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>stdafx.h;</ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleDependenciesFile>
+      <ModuleOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-Hell-Siv3D(debug).pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-H.a6667edf.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <XMLDocumentationFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX20_CISO646_REMOVED_WARNING;_SILENCE_ALL_CXX23_DEPRECATION_WARNINGS;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26451;26812;</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:__cplusplus </AdditionalOptions>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
+    <ClCompile Include="HikanyanLaboratory\System\StateMachine.cpp">
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <SupportJustMyCode>true</SupportJustMyCode>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+      <AssemblerListingLocation>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</AssemblerListingLocation>
+      <UndefineAllPreprocessorDefinitions>false</UndefineAllPreprocessorDefinitions>
+      <BrowseInformation>false</BrowseInformation>
+      <BrowseInformationFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</BrowseInformationFile>
+      <CompileAs>Default</CompileAs>
+      <ConformanceMode>true</ConformanceMode>
+      <DiagnosticsFormat>Column</DiagnosticsFormat>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <EnableASAN>false</EnableASAN>
+      <EnableFuzzer>false</EnableFuzzer>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>stdafx.h;</ForcedIncludeFiles>
+      <GenerateModuleDependencies>false</GenerateModuleDependencies>
+      <GenerateSourceDependencies>false</GenerateSourceDependencies>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ModuleDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleDependenciesFile>
+      <ModuleOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ModuleOutputFile>
+      <OmitDefaultLibName>false</OmitDefaultLibName>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ObjectFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</ObjectFileName>
+      <CallingConvention>Cdecl</CallingConvention>
+      <ProgramDataBaseFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\vc143.pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-Hell-Siv3D(debug).pch</PrecompiledHeaderOutputFile>
+      <PreprocessToFile>false</PreprocessToFile>
+      <PreprocessKeepComments>false</PreprocessKeepComments>
+      <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
+      <RemoveUnreferencedCodeData>true</RemoveUnreferencedCodeData>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <ShowIncludes>false</ShowIncludes>
+      <SourceDependenciesFile>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</SourceDependenciesFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <SpectreMitigation>false</SpectreMitigation>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <TrackerLogDirectory>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\Bullet-H.a6667edf.tlog\</TrackerLogDirectory>
+      <TranslateIncludes>false</TranslateIncludes>
+      <MinimalRebuildFromTracking>true</MinimalRebuildFromTracking>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>true</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <XMLDocumentationFileName>D:\VGAT\VGAT_2024\Takakura\OpenSiv3D\Bullet-Hell-Siv3D\Intermediate\Bullet-Hell-Siv3D\Debug\Intermediate\</XMLDocumentationFileName>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <IntelJCCErratum>false</IntelJCCErratum>
+      <BuildStlModules>false</BuildStlModules>
+      <TreatAngleIncludeAsExternal>false</TreatAngleIncludeAsExternal>
+      <ExternalWarningLevel>InheritWarningLevel</ExternalWarningLevel>
+      <TreatExternalTemplatesAsInternal>true</TreatExternalTemplatesAsInternal>
+      <DisableAnalyzeExternal>false</DisableAnalyzeExternal>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;_SILENCE_CXX20_CISO646_REMOVED_WARNING;_SILENCE_ALL_CXX23_DEPRECATION_WARNINGS;_SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS;_UNICODE;UNICODE;</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26451;26812;</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:__cplusplus </AdditionalOptions>
+      <LinkCompiled>true</LinkCompiled>
+    </ClCompile>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -322,13 +634,17 @@
     <Xml Include="App\example\xml\test.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HikanyanLaboratory\InGame\Entity\Enemy\EnemyBase.h" />
+    <ClInclude Include="HikanyanLaboratory\InGame\Entity\EntityBase.h" />
+    <ClInclude Include="HikanyanLaboratory\InGame\Entity\EntityController.h" />
+    <ClInclude Include="HikanyanLaboratory\InGame\Entity\HealthController.h" />
     <ClInclude Include="HikanyanLaboratory\InGame\GameManager.h" />
     <ClInclude Include="HikanyanLaboratory\InGame\GameState.h" />
     <ClInclude Include="HikanyanLaboratory\InGame\ResultState.h" />
-    <ClInclude Include="HikanyanLaboratory\InGame\Singleton.h" />
-    <ClInclude Include="HikanyanLaboratory\InGame\State.h" />
-    <ClInclude Include="HikanyanLaboratory\InGame\StateMachine.h" />
     <ClInclude Include="HikanyanLaboratory\InGame\TitleState.h" />
+    <ClInclude Include="HikanyanLaboratory\System\Singleton.h" />
+    <ClInclude Include="HikanyanLaboratory\System\State.h" />
+    <ClInclude Include="HikanyanLaboratory\System\StateMachine.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
