@@ -4,6 +4,7 @@
 
 void TitleState::Enter()
 {
+	Scene::SetBackground(ColorF{0, 0, 0});
 }
 
 void TitleState::Update()

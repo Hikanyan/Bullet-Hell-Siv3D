@@ -5,9 +5,11 @@ class EntityBase
 public:
 	EntityBase();
 	virtual ~EntityBase();
-	Vector2D<float> position;
-	Vector2D<float> rotation;
-	Vector2D<float> scale;
+	Vec2 position;
+	Vec2 rotation;
+	Vec2 scale;
+
+	Vec2 velocity;
 	int hp;
 
 	virtual void Initialize() = 0;

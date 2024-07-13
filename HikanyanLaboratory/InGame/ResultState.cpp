@@ -2,6 +2,11 @@
 
 #include "TitleState.h"
 
+void ResultState::Enter()
+{
+	Scene::SetBackground(ColorF{0, 0, 0});
+}
+
 void ResultState::Update()
 {
 	if (KeyEnter.down())

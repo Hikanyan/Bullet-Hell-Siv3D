@@ -2,15 +2,20 @@
 #include "EntityBase.h"
 #include "../../System/Singleton.h"
 
+class Player;
+
 class EntityController : public Singleton<EntityController>
 {
 private:
-	std::vector<EntityBase*> entities;
+	std::vector<EntityBase*> entities_;
+	Player* player_ = nullptr;
 
 public:
 	void Initialize();
 	void AddEntity(EntityBase* entity);
 	void UpdateEntities();
 	void DrawEntities();
-	void Disposable();
+	void Dispose();
+
+	Player* GetPlayer() const;
 };
