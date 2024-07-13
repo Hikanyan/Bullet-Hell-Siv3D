@@ -37,3 +37,5 @@ void Player::Draw()
 	Transformer2D transform(Mat3x2::Scale(scale).translated(position), TransformCursor::Yes);
 	FontAsset(U"Regular")(player_image_).drawAt(0, 0);
 }
+
+

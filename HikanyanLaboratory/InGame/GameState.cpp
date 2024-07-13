@@ -27,4 +27,5 @@ void GameState::Update()
 
 void GameState::Exit()
 {
+	EntityController::getInstance()->Disposable();
 }

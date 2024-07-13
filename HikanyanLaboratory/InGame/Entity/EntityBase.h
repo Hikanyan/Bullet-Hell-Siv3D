@@ -3,6 +3,8 @@
 class EntityBase
 {
 public:
+	EntityBase();
+	virtual ~EntityBase();
 	Vector2D<float> position;
 	Vector2D<float> rotation;
 	Vector2D<float> scale;
@@ -11,11 +13,13 @@ public:
 	virtual void Initialize() = 0;
 	virtual void Update() = 0;
 	virtual void Draw() = 0;
+
 	virtual void Damage(int damage)
 	{
 		hp -= damage;
 		if (hp < 0) hp = 0;
 	}
+
 	virtual void Heal(int heal)
 	{
 		hp += heal;

@@ -12,4 +12,5 @@ public:
 	void AddEntity(EntityBase* entity);
 	void UpdateEntities();
 	void DrawEntities();
+	void Disposable();
 };

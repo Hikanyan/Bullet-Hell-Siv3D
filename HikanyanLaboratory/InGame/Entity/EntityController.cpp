@@ -9,7 +9,6 @@ void EntityController::Initialize()
 	player->Initialize();
 	AddEntity(player);
 	//敵の初期化
-
 }
 
 void EntityController::AddEntity(EntityBase* entity)
@@ -31,4 +30,13 @@ void EntityController::DrawEntities()
 	{
 		entity->Draw();
 	}
+}
+
+void EntityController::Disposable()
+{
+	for (auto& entity : entities)
+	{
+		delete entity;
+	}
+	entities.clear();
 }
